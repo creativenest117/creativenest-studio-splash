@@ -45,7 +45,7 @@ interface AuthSession {
 
 function base64urlEncode(buf: ArrayBuffer | Uint8Array): string {
   const arr = buf instanceof Uint8Array ? buf : new Uint8Array(buf);
-  return btoa(String.fromCharCode(...arr))
+  return btoa(String.fromCharCode(...Array.from(arr)))
     .replace(/\+/g, '-').replace(/\//g, '_').replace(/=/g, '');
 }
 
