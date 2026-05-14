@@ -63,7 +63,7 @@ export default function TVPage({ appConfig }: { appConfig: any }) {
                   <span className="text-xs font-black text-red-400 uppercase tracking-widest">On Air</span>
                 </div>
                 <span className="text-5xl mb-3 block">📺</span>
-                <p className="text-white/60 text-sm">Select a channel to start watching</p>
+                <p className="text-gray-400 text-sm mt-1">Join other viewers who are watching right now.</p>
               </div>
 
               {/* Play button */}
@@ -149,7 +149,7 @@ export default function TVPage({ appConfig }: { appConfig: any }) {
 
       {/* Schedule */}
       <div className="px-5 mb-6">
-        <h2 className="text-base font-bold text-white mb-3" style={{ fontFamily: "'Outfit', sans-serif" }}>Today's Schedule</h2>
+        <h2 className="text-base font-bold text-white mb-3" style={{ fontFamily: "'Outfit', sans-serif" }}>Today&apos;s Schedule</h2>
         <div className="space-y-2">
           {TV_SCHEDULE.map((item, idx) => (
             <div
